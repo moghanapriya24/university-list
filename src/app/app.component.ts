@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   collegesByState: { [key: string]: any[] } = {};
   selectedValue = '';
   finalResult: any[] | undefined;
-  flattenedArray: any;
 
   constructor(private collegeListService: CollegeListService) {}
 
@@ -51,6 +50,5 @@ export class AppComponent implements OnInit {
     if (this.selectedValue) {
       this.finalResult.push(this.collegesByState[this.selectedValue]);
     }
-    console.log(this.finalResult);
   }
 }

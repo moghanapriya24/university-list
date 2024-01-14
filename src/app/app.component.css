@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  background-color: beige;
+}
+
 .select-cls {
   width: 300px;
   height: 48px;
@@ -10,11 +15,14 @@
   padding-top: 60px;
   background-color: cornflowerblue;
   padding-bottom: 60px;
+  animation: header;
+  animation-duration: 2s;
 }
 
 .txt-head {
-  margin-left: 50px;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 option:first {
@@ -24,4 +32,18 @@ option:first {
 .list_styl {
   padding-left: 20px;
   padding-bottom: 10px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes header {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
