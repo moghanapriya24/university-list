@@ -1,6 +1,7 @@
 {
   "name": "universities-list",
   "version": "0.0.0",
+  "homepage": "https://moghanapriya24.github.io/universities-list",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
